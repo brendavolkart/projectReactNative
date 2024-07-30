@@ -10,7 +10,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detected',
+      version: 'detect',
     },
     'import/resolver': {
       node: {
