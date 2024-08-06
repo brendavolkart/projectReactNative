@@ -25,7 +25,7 @@ const Button = ({ title, type, disabled, loading, onPress, margin, ...props }: B
       {loading ? (
         <ActivityIndicator color={theme.colors.neutralTheme.white} />
       ) : (
-        <Text type={textTypes.BUTTON_BOLD} color={color}>
+        <Text type={textTypes.BUTTON_SEMI_BOLD} color={color}>
           {title}
         </Text>
       )}
