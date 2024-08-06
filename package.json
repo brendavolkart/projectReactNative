@@ -12,11 +12,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-native": "0.74.3",
     "react-native-linear-gradient": "^2.8.3",
-    "styled-components": "^6.1.12"
+    "react-native-vector-icons": "^10.1.0",
+    "styled-components": "^6.1.12",    
+    "react": "^18.3.1",
+    "react-native": "0.74.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -28,6 +29,7 @@
     "@react-native/metro-config": "0.74.85",
     "@react-native/typescript-config": "0.74.85",
     "@types/react": "^18.2.6",
+    "@types/react-native-vector-icons": "^6.4.18",
     "@types/react-test-renderer": "^18.0.0",
     "@types/styled-components-react-native": "^5.2.5",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -44,6 +46,10 @@
     "prettier": "^3.3.3",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "overrides": {
+    "react": "^18.3.1",
+    "react-native": "0.74.3"
   },
   "engines": {
     "node": ">=18"
