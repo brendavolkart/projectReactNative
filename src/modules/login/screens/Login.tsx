@@ -12,12 +12,11 @@ const Login = () => {
   return (
     <View>
       <ContainerLogin>
-        <Input />
+        <Input placeholder="Digite seu email" title="Email:" />
         <Button
           type={theme.buttons.buttonsTheme.primary}
           margin="16px"
           title="ENTRAR"
-          disabled
           onPress={handleOnPress}
         />
       </ContainerLogin>
