@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { useState } from 'react';
 import { TextInputProps, View } from 'react-native';
 
@@ -20,7 +19,7 @@ const Input = ({ margin, secureTextEntry, errorMessage, title, ...props }: Input
 
   const handleOnPressEye = () => {
     setCurrentSecure((current) => !current);
-  }
+  };
 
   return (
     <DisplayFlexColumn CustomMargin={margin}>
@@ -33,22 +32,21 @@ const Input = ({ margin, secureTextEntry, errorMessage, title, ...props }: Input
           {title}
         </Text>
       )}
-      
+
       <View>
-        <ContainerInput 
-          hasSecureTextEntry={secureTextEntry} 
-          secureTextEntry={currentSecure} 
-          isError={!!errorMessage} 
-          {...props} 
+        <ContainerInput
+          hasSecureTextEntry={secureTextEntry}
+          secureTextEntry={currentSecure}
+          isError={!!errorMessage}
+          {...props}
         />
-        {secureTextEntry && ( 
+        {secureTextEntry && (
           <IconEye
-            onPress={handleOnPressEye} 
-            name={currentSecure ? 'eye' : 'eye-blocked'} 
-            size={20} 
+            onPress={handleOnPressEye}
+            name={currentSecure ? 'eye' : 'eye-blocked'}
+            size={20}
           />
         )}
-        
       </View>
       {errorMessage && (
         <Text

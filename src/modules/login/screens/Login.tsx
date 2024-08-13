@@ -16,7 +16,7 @@ const Login = () => {
         <Icon name="home3" size={44} />
         <Input
           //errorMessage="Usuário ou senha inválidos"
-          margin='0px 0px 8px 0px'
+          margin="0px 0px 8px 0px"
           placeholder="Digite seu email"
           title="Email:"
         />

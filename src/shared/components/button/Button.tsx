@@ -8,7 +8,7 @@ import { ButtonContainer, ButtonDisabled, ButtonSecundary, GradientButton } from
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
   margin?: string;
-  type: string;
+  type?: string;
   disabled?: boolean;
   loading?: boolean;
   onPress?: () => void;
