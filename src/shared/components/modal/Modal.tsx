@@ -1,9 +1,4 @@
-/* eslint-disable prettier/prettier */
-import {
-  Alert,
-  Modal as ModalReact,
-  ModalProps as ModalPropsReact,
-} from 'react-native';
+import { Alert, Modal as ModalReact, ModalProps as ModalPropsReact } from 'react-native';
 
 import { theme } from '../../themes/theme';
 import Button from '../button/Button';
@@ -34,7 +29,7 @@ const Modal = ({ title, text, onCloseModal, ...props }: ModalProps) => {
         </Text>
         <Text>{text}</Text>
         <Button title="OK" onPress={onCloseModal} />
-        <IconCloseModal onPress={onCloseModal} name='cross' />
+        <IconCloseModal onPress={onCloseModal} name="cross" />
       </ContainerModal>
     </ModalReact>
   );
