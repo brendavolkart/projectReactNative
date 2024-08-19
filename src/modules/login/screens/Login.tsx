@@ -6,7 +6,7 @@ import { theme } from '../../../shared/themes/theme';
 import { ContainerLogin, ImageLogo } from '../styles/login.style';
 
 const Login = () => {
-  const handleOnPress = () => {
+  const handleOnPress = async () => {
     console.log('entrouuuuuuuuuuuuuuuu');
   };
   return (
