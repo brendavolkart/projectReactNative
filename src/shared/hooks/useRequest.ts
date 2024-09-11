@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { useGlobalReducer } from '../../store/reducers/globalReducer/useGlobalReducer';
 import { useUserReducer } from '../../store/reducers/userReducer/useUserReducer';
 import { MenuUrl } from '../enums/MenuUrl.enum';
+import { setAuthorizationToken } from '../functions/connection/auth';
 import { ConnectionAPIPost } from '../functions/connection/connectionAPI';
 import { RequestLogin } from '../types/requestLogin';
 import { ReturnLogin } from '../types/returnLogin';
-import { setAuthorizationToken } from '../functions/connection/auth';
 
 export const useRequest = () => {
   const { reset } = useNavigation<NavigationProp<ParamListBase>>();
